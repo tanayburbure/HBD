@@ -232,11 +232,18 @@ body {
   .six .hat {
     left: 40%;
   }
+  .text-box .fake-btn {
+    margin-top: 2vh;
+  }
+  
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
     left: 37%;
+  }
+  .text-box .fake-btn {
+    margin-top: 2vh;
   }
 }
 
@@ -244,21 +251,27 @@ body {
   .six .hat {
     left: 32%;
   }
+  .text-box .fake-btn {
+    margin-top: 2vh;
+  }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     left: 32%;
   }
+  .text-box .fake-btn {
+    margin-top: 2vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 97%;
+    width: 90%;
   }
 
   .four .text-box {
-    width: 97%;
+    width: 90%;
   }
 
   .text-box .fake-btn {

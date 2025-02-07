@@ -232,11 +232,18 @@ body {
   .six .hat {
     left: 40%;
   }
+  .text-box .fake-btn {
+    margin-top: 2vh;
+  }
+  
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
     left: 37%;
+  }
+  .five .idea-5{
+    font-size:3vh
   }
 }
 
@@ -254,11 +261,11 @@ body {
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 97%;
+    width: 90%;
   }
 
   .four .text-box {
-    width: 97%;
+    width: 90%;
   }
 
   .text-box .fake-btn {

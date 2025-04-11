@@ -31,7 +31,7 @@ body {
 }
 
 .one {
-  font-size: 4.3rem;
+  font-size: 4.5rem;
 }
 
 .two {
@@ -105,9 +105,17 @@ body {
 
 .six img {
   display: inline-block;
-  height: 500px;
+  height: 350px;
   max-width: 100%;
   /* height: auto; */
+}
+
+.six .hat {
+  left: 41.5%;
+  position: absolute;
+  /* transform: scale(0.1); */
+  top: -35%;
+  width: 80px;
 }
 
 .baloons img {
@@ -283,4 +291,17 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+.extra-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.extra-images img {
+  width: 150px;
+  height: auto;
+  opacity: 0; /* Hidden initially */
+  transform: translateY(30px);
 }

@@ -31,7 +31,7 @@ body {
 }
 
 .one {
-  font-size: 4.3rem;
+  font-size: 4.5rem;
 }
 
 .two {
@@ -108,6 +108,14 @@ body {
   height: 500px;
   max-width: 100%;
   /* height: auto; */
+}
+
+.six .hat {
+  position: absolute;
+  /* transform: scale(0.1); */
+  top: -8%;
+  padding-left: 2vw;
+  width: 80px;
 }
 
 .baloons img {

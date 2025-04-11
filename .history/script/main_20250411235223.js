@@ -128,6 +128,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
+    
     .from(
         ".idea-5",
         0.7, {

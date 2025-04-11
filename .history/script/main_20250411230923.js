@@ -128,6 +128,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
     .from(
         ".idea-5",
         0.7, {
@@ -199,6 +200,13 @@ const animationTimeline = () => {
         },
         "-=2"
     )
+    .from(".hat", 0.5, {
+        x: -100,
+        y: 350,
+        rotation: -180,
+        opacity: 0,
+    })
+    
     .staggerFrom(
         ".wish-hbd span",
         0.7, {

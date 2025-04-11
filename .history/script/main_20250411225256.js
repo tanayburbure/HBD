@@ -128,6 +128,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
     .from(
         ".idea-5",
         0.7, {
@@ -188,17 +189,36 @@ const animationTimeline = () => {
         },
         0.2
     )
-    .from(
-        ".profile-picture",
-        0.5, {
-            scale: 3.5,
-            opacity: 0,
-            x: 25,
-            y: -25,
-            rotationZ: -45,
-        },
-        "-=2"
+    const images = document.querySelectorAll('.profile-picture');
+    let currentIndex = 0;
+
+    // Initially hide all images
+    images.forEach(img => {
+        img.style.opacity = '0';
+        img.style.transform = 'scale(0)';
+    });
+
+    const showImage = (index) => {
+        images.forEach((img, i) => {
+            img.style.opacity = i === index ? '1' : '0';
+            img.style.transform = i === index ? 'scale(1)' : 'scale(0)';
+        });
+    };
+
+    const animateImages = () => {
+        showImage(currentIndex);
+        currentIndex = (currentIndex + 1) % images.length;
+        setTimeout(animateImages, 2000); // Show each image for 2 seconds
+    };
+
+    animateImages();
     )
+    .from(".hat", 0.5, {
+        x: -100,
+        y: 350,
+        rotation: -180,
+        opacity: 0,
+    })
     .staggerFrom(
         ".wish-hbd span",
         0.7, {

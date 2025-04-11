@@ -128,6 +128,7 @@ const animationTimeline = () => {
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
+    .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
     .from(
         ".idea-5",
         0.7, {
@@ -188,17 +189,38 @@ const animationTimeline = () => {
         },
         0.2
     )
-    .from(
-        ".profile-picture",
-        0.5, {
-            scale: 3.5,
-            opacity: 0,
-            x: 25,
-            y: -25,
-            rotationZ: -45,
-        },
-        "-=2"
-    )
+    .to(".img1", 0.6, {
+        opacity: 1,
+        scale: 1,
+        ease: "back.out(1.7)"
+    })
+    .to(".img2", 0.6, {
+        opacity: 1,
+        scale: 1,
+        ease: "back.out(1.7)"
+    }, "+=0.2")
+    .to(".img3", 0.6, {
+        opacity: 1,
+        scale: 1,
+        ease: "back.out(1.7)"
+    }, "+=0.2")
+    .to(".img4", 0.6, {
+        opacity: 1,
+        scale: 1,
+        ease: "back.out(1.7)"
+    }, "+=0.2")
+    .to(".img5", 0.6, {
+        opacity: 1,
+        scale: 1,
+        ease: "back.out(1.7)"
+    }, "+=0.2")
+    
+    .from(".hat", 0.5, {
+        x: -100,
+        y: 350,
+        rotation: -180,
+        opacity: 0,
+    })
     .staggerFrom(
         ".wish-hbd span",
         0.7, {
